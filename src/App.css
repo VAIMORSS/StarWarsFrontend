@@ -1,33 +1,107 @@
-.App {
-  text-align: center;
+.card{
+    max-width: 30rem;
+    box-shadow:20px 16px 18px 0 rgba(97, 22, 22, 0.2); 
+            border-radius: 20px;
+            transition: 0.3s;
+            padding: 20px;
+            display: inline-box;
+            margin: 2%;
+            border-width: 15px;
+            border-style: bold;
+            border-color:rgb(247, 232, 23);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.modal-card{
+    max-width: 19rem;
+    min-width: 19rem;
+    box-shadow:20px 16px 18px 0 rgba(97, 22, 22, 0.2); 
+    border-radius: 20px;
+    transition: 0.3s;
+    padding: 20px;
+    display: inline-box;
+    margin: 2%;
+    background-color: rgb(255, 255, 255)
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.modal-card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-footer{
+    background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-deck{
+    text-align: center;
+    padding-left: 7%
+}
+
+.people{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.avatar {
+    vertical-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .btn{
+      text-align: center;
   }
+
+.searchBar{
+    margin-bottom: 3%;
 }
+
+.row{
+    padding: 5%;
+}
+
+.modal-body{
+    background-color: rgb(241, 238, 76)
+}
+
+.logo{
+    height: 250px;
+    weight:250px;
+    text-align: center;
+
+}
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 6px;
+    box-sizing: border-box;
+    border: 26px solid rgb(241, 238, 76);
+    border-color:rgb(241, 238, 76) transparent rgb(241, 238, 76) transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
