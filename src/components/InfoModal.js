@@ -36,7 +36,7 @@ class InfoModal extends React.Component {
           <div className="modal-card">
             <legend>Planet Information</legend>
             <hr />
-            <p><b>Title:</b>{planet.name}<br /><b>Terrain:</b>{planet.terrain}<br /><br /><b>Population:</b>{planet.population} </p>
+            <p><b>Title:</b>{planet.name}<br /><b>Terrain:</b>{planet.terrain}<br /><b>Population:</b>{planet.population} </p>
           </div>
           <div className="modal-card">
             <legend>Species</legend>

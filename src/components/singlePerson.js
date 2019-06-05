@@ -50,7 +50,7 @@ class SinglePerson extends Component {
         let modalClose = () => this.setState({ modalShow: false });
         return (
             <div className="card">
-                <img className="card-img-top avatar" src="https://picsum.photos/200/300" alt="Card image cap"></img>
+                <img className="card-img-top avatar" src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg" alt="Card image cap"></img>
                 <div className="card-body">
                     <h5 className="card-title">{this.props.Person.name}</h5> 
                 </div>
