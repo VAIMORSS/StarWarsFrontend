@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import SinglePerson from './singlePerson';
-import { getPeopleList } from '../actions/peopleActions';
+import { getPeopleList } from '../store/actions/peopleActions';
 import "./../App.css";
-import logo from './../img/logo.png'
+import logo from './../img/logo.png';
 
 
 class People extends Component {

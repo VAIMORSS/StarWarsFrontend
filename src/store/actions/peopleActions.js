@@ -1,5 +1,5 @@
 import { GET_ALL_PEOPLE } from './types';
-import { PeopleList } from './../PeopleList';
+import { PeopleList } from '../../assets/PeopleList';
 
 export const getPeopleList = () => dispatch =>{
     dispatch({
