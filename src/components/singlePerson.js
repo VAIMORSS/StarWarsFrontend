@@ -18,7 +18,7 @@ class SinglePerson extends Component {
 
     }
 
-    handleClick() {
+    handleClick=()=> {
         this.setState({ loading: true });
         axios.get(`/${this.props.Person.id}`).then(res => {
             this.setState({
@@ -33,7 +33,7 @@ class SinglePerson extends Component {
         });
     };
 
-    isEmpty() {
+    isEmpty=()=> {
         for (var key in this.state.person) {
             if (this.state.person.hasOwnProperty(key)) return false;
         }
