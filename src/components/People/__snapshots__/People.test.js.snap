@@ -1,9 +1,510 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should render correctly in "debug" mode 1`] = `
-<div
-  debug={true}
+exports[`People Test should render correctly in "debug" mode 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
 >
-  <Component />
-</div>
+   
+  <Connect(People)>
+    <People
+      getPeopleList={[Function]}
+      people={
+        Object {
+          "people": Array [
+            Object {
+              "id": 1,
+              "name": "Luke Skywalker",
+            },
+            Object {
+              "id": 2,
+              "name": "C-3PO",
+            },
+            Object {
+              "id": 3,
+              "name": "R2-D2",
+            },
+            Object {
+              "id": 4,
+              "name": "Darth Vader",
+            },
+            Object {
+              "id": 5,
+              "name": "Leia Organa",
+            },
+            Object {
+              "id": 6,
+              "name": "Owen Lars",
+            },
+            Object {
+              "id": 7,
+              "name": "Beru Whitesun lars",
+            },
+            Object {
+              "id": 8,
+              "name": "R5-D4",
+            },
+            Object {
+              "id": 9,
+              "name": "Biggs Darklighter",
+            },
+            Object {
+              "id": 10,
+              "name": "Leia Organa",
+            },
+          ],
+        }
+      }
+    >
+      <div
+        className="people container"
+      >
+        <img
+          alt="logo"
+          className="logo"
+          src="logo.png"
+        />
+        <input
+          className="input-field col s12 searchBar"
+          id="searchBar"
+          onChange={[Function]}
+          placeholder="Search Here"
+          type="text"
+        />
+        <div
+          className="card-deck"
+        >
+          <div
+            key="1"
+          >
+            <SinglePerson
+              Person={
+                Object {
+                  "id": 1,
+                  "name": "Luke Skywalker",
+                }
+              }
+              key="1"
+            >
+              <div
+                className="card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top avatar"
+                  src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+                />
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    Luke Skywalker
+                  </h5>
+                </div>
+                <div
+                  className="card-footer"
+                >
+                  <button
+                    className="btn btn-dark 1"
+                    onClick={[Function]}
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </SinglePerson>
+          </div>
+          <div
+            key="2"
+          >
+            <SinglePerson
+              Person={
+                Object {
+                  "id": 2,
+                  "name": "C-3PO",
+                }
+              }
+              key="2"
+            >
+              <div
+                className="card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top avatar"
+                  src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+                />
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    C-3PO
+                  </h5>
+                </div>
+                <div
+                  className="card-footer"
+                >
+                  <button
+                    className="btn btn-dark 2"
+                    onClick={[Function]}
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </SinglePerson>
+          </div>
+          <div
+            key="3"
+          >
+            <SinglePerson
+              Person={
+                Object {
+                  "id": 3,
+                  "name": "R2-D2",
+                }
+              }
+              key="3"
+            >
+              <div
+                className="card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top avatar"
+                  src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+                />
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    R2-D2
+                  </h5>
+                </div>
+                <div
+                  className="card-footer"
+                >
+                  <button
+                    className="btn btn-dark 3"
+                    onClick={[Function]}
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </SinglePerson>
+          </div>
+          <div
+            key="4"
+          >
+            <SinglePerson
+              Person={
+                Object {
+                  "id": 4,
+                  "name": "Darth Vader",
+                }
+              }
+              key="4"
+            >
+              <div
+                className="card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top avatar"
+                  src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+                />
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    Darth Vader
+                  </h5>
+                </div>
+                <div
+                  className="card-footer"
+                >
+                  <button
+                    className="btn btn-dark 4"
+                    onClick={[Function]}
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </SinglePerson>
+          </div>
+          <div
+            key="5"
+          >
+            <SinglePerson
+              Person={
+                Object {
+                  "id": 5,
+                  "name": "Leia Organa",
+                }
+              }
+              key="5"
+            >
+              <div
+                className="card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top avatar"
+                  src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+                />
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    Leia Organa
+                  </h5>
+                </div>
+                <div
+                  className="card-footer"
+                >
+                  <button
+                    className="btn btn-dark 5"
+                    onClick={[Function]}
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </SinglePerson>
+          </div>
+          <div
+            key="6"
+          >
+            <SinglePerson
+              Person={
+                Object {
+                  "id": 6,
+                  "name": "Owen Lars",
+                }
+              }
+              key="6"
+            >
+              <div
+                className="card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top avatar"
+                  src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+                />
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    Owen Lars
+                  </h5>
+                </div>
+                <div
+                  className="card-footer"
+                >
+                  <button
+                    className="btn btn-dark 6"
+                    onClick={[Function]}
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </SinglePerson>
+          </div>
+          <div
+            key="7"
+          >
+            <SinglePerson
+              Person={
+                Object {
+                  "id": 7,
+                  "name": "Beru Whitesun lars",
+                }
+              }
+              key="7"
+            >
+              <div
+                className="card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top avatar"
+                  src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+                />
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    Beru Whitesun lars
+                  </h5>
+                </div>
+                <div
+                  className="card-footer"
+                >
+                  <button
+                    className="btn btn-dark 7"
+                    onClick={[Function]}
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </SinglePerson>
+          </div>
+          <div
+            key="8"
+          >
+            <SinglePerson
+              Person={
+                Object {
+                  "id": 8,
+                  "name": "R5-D4",
+                }
+              }
+              key="8"
+            >
+              <div
+                className="card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top avatar"
+                  src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+                />
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    R5-D4
+                  </h5>
+                </div>
+                <div
+                  className="card-footer"
+                >
+                  <button
+                    className="btn btn-dark 8"
+                    onClick={[Function]}
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </SinglePerson>
+          </div>
+          <div
+            key="9"
+          >
+            <SinglePerson
+              Person={
+                Object {
+                  "id": 9,
+                  "name": "Biggs Darklighter",
+                }
+              }
+              key="9"
+            >
+              <div
+                className="card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top avatar"
+                  src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+                />
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    Biggs Darklighter
+                  </h5>
+                </div>
+                <div
+                  className="card-footer"
+                >
+                  <button
+                    className="btn btn-dark 9"
+                    onClick={[Function]}
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </SinglePerson>
+          </div>
+          <div
+            key="10"
+          >
+            <SinglePerson
+              Person={
+                Object {
+                  "id": 10,
+                  "name": "Leia Organa",
+                }
+              }
+              key="10"
+            >
+              <div
+                className="card"
+              >
+                <img
+                  alt="Card image cap"
+                  className="card-img-top avatar"
+                  src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+                />
+                <div
+                  className="card-body"
+                >
+                  <h5
+                    className="card-title"
+                  >
+                    Leia Organa
+                  </h5>
+                </div>
+                <div
+                  className="card-footer"
+                >
+                  <button
+                    className="btn btn-dark 10"
+                    onClick={[Function]}
+                  >
+                    More Info
+                  </button>
+                </div>
+              </div>
+            </SinglePerson>
+          </div>
+        </div>
+      </div>
+    </People>
+  </Connect(People)>
+</Provider>
 `;

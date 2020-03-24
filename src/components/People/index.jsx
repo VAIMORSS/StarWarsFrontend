@@ -17,8 +17,12 @@ class People extends Component {
         }
     }
 
-    componentDidMount(){
-        this.props.getPeopleList();
+    async componentDidMount(){
+        try{
+            this.props.getPeopleList();
+        }catch(e){
+
+        }
     }
 
     handleChange(event){
@@ -42,6 +46,7 @@ class People extends Component {
                 <img className="logo" src={logo} alt="logo" />
                 <input
                     type="text"
+                    id="searchBar"
                     className="input-field col s12 searchBar"
                     value={this.state.searchString}
                     ref="search"
@@ -59,6 +64,10 @@ class People extends Component {
             </div>
         )
     }
+}
+
+People.defaultProps={
+    getPeopleList:()=>{}
 }
 
 People.propTypes={

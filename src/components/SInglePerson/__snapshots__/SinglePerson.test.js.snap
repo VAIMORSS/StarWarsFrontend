@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Single Person should render correctly in "debug" mode 1`] = `
+exports[`Single Person Test should render correctly in "debug" mode 1`] = `
 <div
   className="card"
 >
@@ -22,7 +22,7 @@ exports[`Single Person should render correctly in "debug" mode 1`] = `
     className="card-footer"
   >
     <button
-      className="btn btn-dark"
+      className="btn btn-dark 1"
       onClick={[Function]}
     >
       More Info
