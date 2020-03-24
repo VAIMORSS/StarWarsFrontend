@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import InfoModal from "./InfoModal";
+import InfoModal from "../InfoModal";
 
 class SinglePerson extends Component {
     constructor(props) {
@@ -63,14 +63,14 @@ class SinglePerson extends Component {
                         )}
                 </div>
 
-                <InfoModal
+                {this.state.modalShow&&<InfoModal
                     show={this.state.modalShow}
                     onHide={modalClose}
                     person={this.state.person}
                     homeworld={this.state.homeworld}
                     species={this.state.species}
                     films={this.state.films}
-                />
+                />}
             </div>
         );
     }
