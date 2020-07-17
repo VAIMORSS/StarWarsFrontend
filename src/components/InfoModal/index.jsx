@@ -1,12 +1,13 @@
 import React from 'react'
 import { Modal, Button } from "react-bootstrap";
-import "./../App.css";
+import "./../../App/App.css";
 
 class InfoModal extends React.Component {
   render() {
     const person = this.props.person;
-    const planet = this.props.homeworld;
-    const species = this.props.species;
+    const planet = this.props.person.homeworld;
+    const species = this.props.person.species;
+  
     let i = 0;
     return (
       <Modal
@@ -46,7 +47,7 @@ class InfoModal extends React.Component {
           </div>
           <legend>Films</legend>
           <div className="row">
-            {this.props.films.map(film =>
+            {this.props.person.films.map(film =>
               <div key={i++} className="modal-card col-lg-6">
                 <p><b>Title:</b>{film.title} <br /><b>Director:</b>{film.director}<br /><b>Producers:</b>{film.producer}<br /><b>Release Date:</b>{film.release_date}</p>
               </div>

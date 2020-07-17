@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import SinglePerson from './singlePerson';
-import { getPeopleList } from '../store/actions/peopleActions';
-import "./../App.css";
-import logo from './../img/logo.png';
+import SinglePerson from '../SInglePerson';
+import { getPeopleList } from '../../store/actions/peopleActions';
+import "./../../App/App.css";
+import logo from './../../img/logo.png';
 
 
 class People extends Component {
@@ -17,8 +17,12 @@ class People extends Component {
         }
     }
 
-    componentDidMount(){
-        this.props.getPeopleList();
+    async componentDidMount(){
+        try{
+            this.props.getPeopleList();
+        }catch(e){
+
+        }
     }
 
     handleChange(event){
@@ -42,6 +46,7 @@ class People extends Component {
                 <img className="logo" src={logo} alt="logo" />
                 <input
                     type="text"
+                    id="searchBar"
                     className="input-field col s12 searchBar"
                     value={this.state.searchString}
                     ref="search"
@@ -59,6 +64,10 @@ class People extends Component {
             </div>
         )
     }
+}
+
+People.defaultProps={
+    getPeopleList:()=>{}
 }
 
 People.propTypes={

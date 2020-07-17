@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import InfoModal from "./InfoModal";
+import InfoModal from "../InfoModal";
 
 class SinglePerson extends Component {
     constructor(props) {
@@ -21,6 +21,12 @@ class SinglePerson extends Component {
     handleClick=()=> {
         this.setState({ loading: true });
         axios.get(`/${this.props.Person.id}`).then(res => {
+            if(res.status!==200){
+                this.setState({
+                    loading:false
+                })
+                return;
+            }
             this.setState({
                 person: res.data,
                 buttonPresses: true,
@@ -57,20 +63,20 @@ class SinglePerson extends Component {
                     {this.state.loading ? (
                         <div className="lds-hourglass"></div>
                     ) : (
-                            <button className="btn btn-dark" onClick={this.handleClick}>
+                            <button className={`btn btn-dark ${this.props.Person.id}`} onClick={this.handleClick}>
                                 More Info
-            </button>
+                            </button>
                         )}
                 </div>
 
-                <InfoModal
+                {this.state.modalShow&&<InfoModal
                     show={this.state.modalShow}
                     onHide={modalClose}
                     person={this.state.person}
                     homeworld={this.state.homeworld}
                     species={this.state.species}
                     films={this.state.films}
-                />
+                />}
             </div>
         );
     }

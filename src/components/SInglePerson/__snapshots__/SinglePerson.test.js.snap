@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Single Person Test should render correctly in "debug" mode 1`] = `
+<div
+  className="card"
+>
+  <img
+    alt="Card image cap"
+    className="card-img-top avatar"
+    src="https://starwarsblog.starwars.com/wp-content/uploads/2017/01/sw-the-last-jedi-tall-1200x630.jpg"
+  />
+  <div
+    className="card-body"
+  >
+    <h5
+      className="card-title"
+    >
+      Luke Skywalker
+    </h5>
+  </div>
+  <div
+    className="card-footer"
+  >
+    <button
+      className="btn btn-dark 1"
+      onClick={[Function]}
+    >
+      More Info
+    </button>
+  </div>
+</div>
+`;
